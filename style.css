@@ -1,0 +1,459 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
+body{
+    line-height: 1.5;
+    font-family: "Source Sans Pro",sans-serif;
+}
+p,button{
+    line-height: 2;
+    color: #666;
+    font-size: 18px;
+}
+h2{
+    letter-spacing: 2px;
+}
+button:hover{
+    transform: translateY(-3px);
+}
+.navbar{
+    display: block;
+    background-color:#fff;
+    width: 100%;
+    position: sticky;
+    z-index: 1000;
+    box-shadow: 0 10px 100px rgba(0,0,0,.1);
+    padding: 18px;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  
+}
+
+.navbar .nav .logo{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 10px;
+    flex: 7;
+    
+  
+}
+.navbar .nav .logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar .nav li{
+    flex: 1;
+}
+.navbar .nav li:first-child a{
+    font-size: 18px;
+}
+.navbar .nav a{
+    display: inline-block;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s;
+}
+.navbar .nav a:hover{
+    color: #7843e9;
+}
+
+
+.body{
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(./images/common-bg.svg);
+    height: 300px;
+    background-color: rgb(236, 228, 228);
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 86px);
+}
+.body .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+   
+}
+.body .links .inside{
+    background-color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+  padding: 20px;
+}
+.body .links .inside i{
+    font-size: 24px;
+    color: #111;
+}
+.body .home_content{
+    flex: 230;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.body .home_content h1{
+    font-size: 3.3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #111;
+}
+
+.body .home_content p{
+    width: 60%;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 25px;
+}
+
+.body .home_content button{
+    margin-top: 30px;
+    background: #7843e9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s;
+    padding: 15px 70px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chat{
+    padding: 20px;
+    position: fixed;
+    z-index: 10000;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.chat button{ 
+    padding: 12px 25px 12px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+ 
+    box-shadow: rgba(0, 18, 46, 0.24) 0px 6px 32px 0px;
+    cursor: pointer;
+
+}
+.chat .inside{
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( rgb(100, 4, 142), rgb(0, 13, 252));
+}
+.chat i{
+    font-size: 20px;
+    color: #fff;
+}
+
+.about_me{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fdfbfb;
+}
+
+.about_me h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about_me .line{
+    width: 5%;
+    height: 10px;
+    border-radius: 5px;
+    background: #7843e9;
+}
+
+.about_me p{
+    width: 50%;
+    text-align: center;
+    font-size: 19px;
+   
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between; 
+}
+.skills .know_me{
+    flex: 1;
+    padding: 100px;
+}
+
+.skills .know_me h3{
+    font-size: 36px;
+    padding-bottom: 25px;
+    font-weight: 700;
+}
+
+.skills .know_me .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+.skills .know_me .infos a{
+    text-decoration: underline;
+}
+
+.skills .know_me button {
+    margin-top: 30px;
+    background: #7843e9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s;
+    padding: 15px 70px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.skills .myskills{
+    flex: 1;
+    padding: 100px;
+}
+.skills .myskills h3{
+    font-size: 36px;
+    padding-bottom: 25px;
+    font-weight: 700;
+}
+
+.skills .myskills .skil{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 17px;
+    text-transform: capitalize;
+}
+
+.skills .myskills .skil div{
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.6;
+    padding: 15px;
+    background-color: #eae2e2;
+    border-radius: 5px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px 0 100px;
+    gap: 100px;
+    background-color: #ffffff;
+}
+
+.projects> div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.projects div img{
+    width: 690px;
+    height: 408px;
+}
+
+.projects> div> div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    width: 34%;
+}
+
+.projects> div> div> h4{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.projects> div> div> button{
+    margin-top: 30px;
+    background: #7843e9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s;
+    padding: 15px 70px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact{
+    width: 100%;
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(./images/common-bg.svg);
+}
+.contact .inside{
+    padding: 50px 100px 50px 100px;
+    min-width: 56%;
+    max-width: 57%;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    gap: 10px;
+}
+
+.contact .inside div{
+    padding: 20px;
+    
+} 
+.contact .inside div:last-child{
+  
+    display: flex;
+    justify-content: center;
+    
+}
+.contact .inside div p{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.contact .inside div input,textarea{
+    border: 1px solid #757070;
+    border-radius: 10px;
+    padding: 25px 10px 25px 20px;
+    width: 720px;
+    font-size: 17px;
+    
+}
+
+.contact .inside div input:focus{
+    outline:1px solid green
+}
+
+.contact .inside div button{
+    margin-top: 10px;
+    background: #7843e9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s;
+    padding: 15px 70px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250%;
+   
+}
+
+.footer{
+    background-color: black;
+    padding: 50px 20px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer h3{
+    color: white;
+    font-size: 24px;
+}
+
+.footer .info{
+    flex: 3;
+    padding: 20px;
+}
+.footer .social{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    
+}
+hr{
+    background-color: white;
+}
+.footer .social .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 110px;
+}
+.footer .social a{
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer p{
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(226, 215, 215);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+
+footer> p{
+    font-size: 14px;
+    color: white;
+}
+
+footer strong{
+    text-decoration: underline;
+    color: white;
+}
